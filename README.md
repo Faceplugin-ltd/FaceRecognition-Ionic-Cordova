@@ -43,7 +43,7 @@ Explore `face recognition SDK` `React Native Plugin` from [Faceplugin](https://f
 ## Install License
   
 - The code below shows how to use the license: https://github.com/Faceplugin-ltd/FaceRecognition-Ionic-Cordova/blob/8356c1577bce5cbb0a7e83a08d8f8f77d4359dbb/src/app/home/home.page.ts#L14-L62
-Please contact us to get the license.
+Please [contact us](#contact) to get the license.
 
 ## How To Run
 ### 1. Prerequisites
@@ -107,18 +107,26 @@ And navigate to Info.plist and add the following entry to request camera permiss
 Build the app using Xcode and run it on a real iOS device (not a simulator).
 
 ## List of our Products
-
-* **[FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-Android)**
-* **[FaceRecognition-LivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceRecognition-iOS)**
-* **[FaceRecognition-LivenessDetection-React Native](https://github.com/Faceplugin-ltd/FaceRecognition-React-Native#)**
-* **[FaceRecognition-LivenessDetection-Flutter](https://github.com/Faceplugin-ltd/FaceRecognition-Flutter)**
-* **[FaceRecognition-LivenessDetection-.Net WPF](https://github.com/Faceplugin-ltd/FaceRecognition-WPF-.Net)**
-* **[FaceRecognition-LivenessDetection-.Net MAUI](https://github.com/Faceplugin-ltd/FaceRecognition-.Net)**
-* **[FaceLivenessDetection-Linux](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Linux)**
-* **[FaceRecognition-LivenessDetection-Javascript](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Javascript)**
-* **[FaceRecognition-LivenessDetection-React](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-React)**
-* **[FaceRecognition-LivenessDetection-Vue](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Vue)**
+* **[Face Recognition with Liveness Detection-Android (Java, Kotlin)](https://github.com/Faceplugin-ltd/FaceRecognition-Android)**
+* **[Face Recognition with Liveness Detection-iOS (Objective C, Swift)](https://github.com/Faceplugin-ltd/FaceRecognition-iOS)**
+* **[Face Recognition with Liveness Detection-React Native](https://github.com/Faceplugin-ltd/FaceRecognition-React-Native)**
+* **[Face Recognition with Liveness Detection-Flutter](https://github.com/Faceplugin-ltd/FaceRecognition-Flutter)**
+* **[Face Recognition with Liveness Detection-Ionic Cordova](https://github.com/Faceplugin-ltd/FaceRecognition-Ionic-Cordova)**
+* **[Face Recognition with Liveness Detection-.Net MAUI](https://github.com/Faceplugin-ltd/FaceRecognition-.Net)**
+* **[Face Recognition with Liveness Detection-.Net WPF](https://github.com/Faceplugin-ltd/FaceRecognition-WPF-.Net)**
+* **[Face Recognition with Liveness Detection-Javascript](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Javascript)**
+* **[Face Recognition with LivenessDetection-React](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-React)**
+* **[Face Recognition with LivenessDetection-Vue](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Vue)**
+* **[Face Liveness Detection-Android (Java, Kotlin)](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android)**
+* **[Face Liveness Detection-iOS (Objective C, Swift)](https://github.com/Faceplugin-ltd/FaceLivenessDetection-iOS)**
+* **[Face Liveness Detection-Linux](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Linux)**
+* **[Face Liveness Detection-Docker](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker)**
+* **[Open Source Face Recognition SDK](https://github.com/Faceplugin-ltd/Open-Source-Face-Recognition-SDK)**
+* **[Face Recognition SDK](https://github.com/Faceplugin-ltd/Face-Recognition-SDK)**
+* **[Liveness Detection SDK](https://github.com/Faceplugin-ltd/Face-Liveness-Detection-SDK)**
+* **[Palm Recognition SDK](https://github.com/Faceplugin-ltd/Palm-Recognition)**
 * **[ID Card Recognition](https://github.com/Faceplugin-ltd/ID-Card-Recognition)**
+* **[ID Document Liveness Detection](https://github.com/Faceplugin-ltd/ID-Document-Liveness-Detection)**
 
 ## Contact
 <div align="left">
