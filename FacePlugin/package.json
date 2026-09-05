@@ -1,0 +1,43 @@
+{
+  "name": "face-recognition-cordova",
+  "version": "0.1.0",
+  "description": "FacePlugin Face Recognition SDK Cordova plugin (Android + iOS)",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "dist/",
+    "hooks/",
+    "lib/",
+    "plugin.xml",
+    "src/",
+    "www/"
+  ],
+  "author": "FacePlugin <info@faceplugin.com> (https://faceplugin.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faceplugin-ltd/FaceRecognition-Ionic-Cordova.git"
+  },
+  "homepage": "https://github.com/Faceplugin-ltd/FaceRecognition-Ionic-Cordova#readme",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "ionic",
+    "face-recognition",
+    "faceplugin"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "~5.4.5"
+  },
+  "cordova": {
+    "id": "face-recognition-cordova",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "face-recognition-cordova-demo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "custom"
+}

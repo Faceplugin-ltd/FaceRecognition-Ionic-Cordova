@@ -1,0 +1,36 @@
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# node
+node_modules/
+npm-debug.log*
+FacePlugin/node_modules/
+FacePlugin/dist/
+
+# Build / Cordova
+www/
+platforms/
+plugins/
+.tools/
+
+# Android
+.gradle/
+local.properties
+**/build/
+*.aar
+!FacePlugin/src/android/AAR_README.md
+
+# iOS
+**/Pods/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+FacePlugin/src/ios/Frameworks/**/*.framework/**
+!FacePlugin/src/ios/Frameworks/README.md
+
+# Env
+.env
+.env.*
