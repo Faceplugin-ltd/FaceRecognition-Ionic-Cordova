@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="face-recognition-cordova"
+        version="0.1.0">
+  <name>FaceRecognitionSdk</name>
+  <description>FacePlugin Face Recognition SDK for Ionic Cordova</description>
+  <license>MIT</license>
+  <keywords>cordova,ionic,face-recognition,faceplugin</keywords>
+
+  <js-module src="www/FaceRecognitionSdk.js" name="FaceRecognitionSdk">
+    <clobbers target="cordova.plugins.FaceRecognitionSdk" />
+  </js-module>
+
+  <hook type="after_prepare" src="hooks/android_prepare.js" />
+  <hook type="before_build" src="hooks/android_prepare.js" />
+  <hook type="before_run" src="hooks/android_prepare.js" />
+  <hook type="after_prepare" src="hooks/ios_prepare.js" />
+  <hook type="before_build" src="hooks/ios_prepare.js" />
+  <hook type="before_run" src="hooks/ios_prepare.js" />
+  <hook type="after_build" src="hooks/ios_prepare.js" />
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="FaceRecognitionSdk">
+        <param name="android-package" value="com.facerecognitionsdk.FaceRecognitionSdkPlugin"/>
+      </feature>
+      <preference name="AndroidXEnabled" value="true" />
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/*">
+      <uses-permission android:name="android.permission.CAMERA" />
+    </config-file>
+    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application"
+                 xmlns:android="http://schemas.android.com/apk/res/android">
+      <application android:largeHeap="true" />
+    </edit-config>
+
+    <source-file src="src/android/FaceRecognitionSdkPlugin.kt"
+                 target-dir="app/src/main/java/com/facerecognitionsdk" />
+    <source-file src="src/android/ImageUtils.kt"
+                 target-dir="app/src/main/java/com/facerecognitionsdk" />
+
+    <resource-file src="src/android/facerecognitionsdk.aar" target="libs/facerecognitionsdk.aar" />
+    <framework src="src/android/aarintegration.gradle" custom="true" type="gradleReference" />
+    <source-file src="src/android/build-extras.gradle" target-dir="." />
+  </platform>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="FaceRecognitionSdk">
+        <param name="ios-package" value="FaceRecognitionSdkPlugin" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/FaceRecognitionSdkBridge.h" />
+    <header-file src="src/ios/FaceRecognitionSdk-Bridging-Header.h" type="BridgingHeader" />
+    <source-file src="src/ios/FaceRecognitionSdkBridge.mm" compiler-flags="-std=c++17" />
+    <header-file src="src/ios/FaceRecognitionSdkPlugin.h" />
+    <source-file src="src/ios/FaceRecognitionSdkPlugin.swift" />
+    <framework src="src/ios/Frameworks/facerecognitionsdk.framework" custom="true" embed="true" link="true" />
+    <framework src="src/ios/Frameworks/FaceRecognitionEngine.framework" custom="true" embed="true" link="true" />
+    <framework src="src/ios/Frameworks/onnxruntime.framework" custom="true" embed="true" link="true" />
+    <framework src="UIKit.framework" />
+    <framework src="AVFoundation.framework" />
+    <framework src="libc++.tbd" />
+  </platform>
+</plugin>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.faceplugin.facerecognitionsdk" android-packageName="com.faceplugin.facerecognitionsdk" ios-CFBundleIdentifier="com.faceplugin.facerecognitionsdk" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>FaceRecognitionCordova</name>
+    <description>FacePlugin Ionic Cordova Face Recognition demo</description>
+    <author email="info@faceplugin.com" href="https://faceplugin.com">FacePlugin</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="*" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="GradlePluginKotlinEnabled" value="true" />
+    <preference name="GradlePluginKotlinVersion" value="1.9.24" />
+    <preference name="android-minSdkVersion" value="24" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+    <preference name="BackgroundColor" value="0x00000000" />
+    <hook type="after_prepare" src="scripts/copy-android-icons.js" />
+    <platform name="android">
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:largeHeap="true" />
+        </edit-config>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+        </config-file>
+        <icon density="ldpi" src="resources/android/res/mipmap-mdpi/ic_launcher.png" />
+        <icon density="mdpi" src="resources/android/res/mipmap-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="resources/android/res/mipmap-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="resources/android/res/mipmap-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="resources/android/res/mipmap-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="resources/android/res/mipmap-xxxhdpi/ic_launcher.png" />
+    </platform>
+    <platform name="ios">
+        <preference name="deployment-target" value="13.0" />
+        <icon src="resources/ios/icon.png" width="1024" height="1024" />
+        <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+            <string>Camera is required for face recognition.</string>
+        </config-file>
+        <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
+            <string>Photo library is used to select images for enrollment.</string>
+        </config-file>
+    </platform>
+</widget>

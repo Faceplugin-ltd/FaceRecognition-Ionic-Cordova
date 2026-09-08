@@ -1,0 +1,22 @@
+{
+  "ios": {
+    "debug": {
+      "codeSignIdentity": "Apple Development",
+      "developmentTeam": "F5UMQMPPB8",
+      "packageType": "development",
+      "automaticProvisioning": true,
+      "buildFlag": [
+        "-allowProvisioningUpdates"
+      ]
+    },
+    "release": {
+      "codeSignIdentity": "Apple Development",
+      "developmentTeam": "F5UMQMPPB8",
+      "packageType": "development",
+      "automaticProvisioning": true,
+      "buildFlag": [
+        "-allowProvisioningUpdates"
+      ]
+    }
+  }
+}

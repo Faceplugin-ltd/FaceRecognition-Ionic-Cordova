@@ -1,0 +1,14 @@
+ext.cdvMinSdkVersion = 24
+
+// Mirror FaceRecognition Capacitor / React Native packaging (applied at app module).
+android {
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+            pickFirsts += ['**/libc++_shared.so']
+        }
+    }
+    androidResources {
+        noCompress += ['fpk']
+    }
+}
