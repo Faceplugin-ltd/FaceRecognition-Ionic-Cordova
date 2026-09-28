@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.faceplugin.facerecognitionsdk" android-packageName="com.faceplugin.facerecognitionsdk" ios-CFBundleIdentifier="com.faceplugin.facerecognitionsdk" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>FaceRecognitionCordova</name>
+    <name>Faceplugin-Face-SDK</name>
     <description>FacePlugin Ionic Cordova Face Recognition demo</description>
     <author email="info@faceplugin.com" href="https://faceplugin.com">FacePlugin</author>
     <content src="index.html" />
